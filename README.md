@@ -24,4 +24,15 @@ apt update
 
 apt install git
 
-git clone https://github.com/ocenandor/FSE_team1_project.git
+git clone https://github.com/ocenandor/FSE_team1_project.git project
+
+cd project
+
+chmod u+x prereqs.sh
+
+cd src/test
+
+chmod u+x test.sh
+
+./test.sh
+
