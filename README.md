@@ -1,7 +1,7 @@
 # A calculator that recognizes numbers from photos. 
 Project from Skoltech FSE course.
 
-Run with the aid of Docker:
+### Run with the aid of Docker:
 
 First of all clone the repo with project to your local machine:
 
@@ -18,7 +18,7 @@ docker run -v $PWD/src/dataset:/app/src/dataset fse_3
 
 
 
-Or you can do it by yourself:
+### Or you can do it by yourself:
 
 apt update
 
