@@ -53,8 +53,12 @@ class Model():
         """function to predict the digit. 
         Argument of function is PIL Image"""
         if type(img_path) == str and os.path.isfile(img_path):
-            if imghdr.what(img_path).lower() in ['png', 'jpg', 'jpeg']:
-                preprocessed_image = self.preprocessing_image(img_path)
+            if imghdr.what(img_path) != None:
+                if imghdr.what(img_path).lower() in ['png', 'jpg', 'jpeg']:
+                    preprocessed_image = self.preprocessing_image(img_path)
+                else:
+                    print('File is not an image')
+                    raise ValueError
             else:
                 print('File is not an image')
                 raise ValueError
@@ -72,7 +76,16 @@ class Model():
 
 
 if __name__ == '__main__':
-
     test_model = Model()
-    prediction = test_model.predict_digit("0.png")[0]
-    print(prediction)
+    mypath = 'Dataset/'
+    onlyfiles = [f for f in listdir(mypath) if (isfile(join(mypath, f)) and imghdr.what(join(mypath, f)) != None)]
+    onlyfiles = [f for f in onlyfiles if imghdr.what(join(mypath, f)).lower() in ['png', 'jpg', 'jpeg']]
+
+    if len(onlyfiles) >= 2:
+        num1 = test_model.predict_digit(join(mypath, onlyfiles[0]))
+        num2 = test_model.predict_digit(join(mypath, onlyfiles[1]))
+        print('Done!')
+        print(num1, num2)
+    else:
+        print('Not enough images. At least 2')
+        raise ValueError
