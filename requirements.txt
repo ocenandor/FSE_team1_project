@@ -3,4 +3,4 @@ tensorflow
 numpy 
 Pillow
 opencv-python
-unittest
+unittest2
