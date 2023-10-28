@@ -10,7 +10,7 @@ from os.path import isfile, join
 
 class Model():
     def __init__(self):
-        self.model = load_model('mnist.h5')
+        self.model = load_model('src/mnist.h5')
         pass
         
     def read_img(self, img_path):
@@ -77,7 +77,7 @@ class Model():
 
 if __name__ == '__main__':
     test_model = Model()
-    mypath = 'Dataset/'
+    mypath = 'src/dataset/'
     onlyfiles = [f for f in listdir(mypath) if (isfile(join(mypath, f)) and imghdr.what(join(mypath, f)) != None)]
     onlyfiles = [f for f in onlyfiles if imghdr.what(join(mypath, f)).lower() in ['png', 'jpg', 'jpeg']]
 
