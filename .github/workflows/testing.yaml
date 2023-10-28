@@ -6,4 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: ls
+      - name: setup tests
+        working-directory: ./src
+        run: ls
