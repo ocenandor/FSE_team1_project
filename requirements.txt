@@ -3,3 +3,4 @@ tensorflow
 numpy 
 Pillow
 opencv-python
+Cython
