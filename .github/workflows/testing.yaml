@@ -1,5 +1,5 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: unittest-checking
+run-name: ${{ github.actor }} is testing software
 on: [push]
 jobs:
   check-bats-version:
@@ -8,8 +8,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
+          ./prereqs.sh
       - name: Run tests
         working-directory: ./src
         run: |
