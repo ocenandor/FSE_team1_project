@@ -38,5 +38,11 @@ chmod u+x test.sh
 
 cd ../../
 
+On local computer:
+
+docker cp 7.png Kamil:/root/Artem/src/dataset/
+
+On docker container:
+
 python3 digit_predictor.py
 
