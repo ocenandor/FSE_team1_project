@@ -16,3 +16,12 @@ Then copy 2 photos of images to "dataset" directory and run container:
 docker run -v $PWD/src/dataset:/app/src/dataset fse_3
 
 
+
+
+Or you can do it by yourself:
+
+apt update
+
+apt install git
+
+git clone https://github.com/ocenandor/FSE_team1_project.git
