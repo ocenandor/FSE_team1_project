@@ -27,7 +27,7 @@ def test_model():
         pass
     else:
         raise AssertionError("Non-image file did not raise ValueError")
-
+    
     # Test 4: Check if predicting a digit returns a valid result
     imgs = [f for f in listdir('img') if isfile(join('img', f))]
     
