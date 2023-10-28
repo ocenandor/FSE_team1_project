@@ -6,5 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pwd
-      - run: echo 555
+      - run: python test/test.py
+      - run: ls
