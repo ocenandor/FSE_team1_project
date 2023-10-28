@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+temp
+img*.cpp
+*.so
+*.pyd
+__pycache__
+vasp-*

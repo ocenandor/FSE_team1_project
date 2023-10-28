@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "main-calculator", "win-on-lattice.vcxproj", "{41F231CF-31D3-480F-8FC6-E904FDA84A29}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "on-lattice-core", "on-lattice-core.vcxitems", "{73EFDC2A-246F-424E-92DF-509B7C00C7B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_MPI|x64 = Debug_MPI|x64
+		Debug_MPI|x86 = Debug_MPI|x86
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		DLL|x64 = DLL|x64
+		DLL|x86 = DLL|x86
+		Release_MPI|x64 = Release_MPI|x64
+		Release_MPI|x86 = Release_MPI|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Debug_MPI|x64.ActiveCfg = Debug_MPI|x64
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Debug_MPI|x64.Build.0 = Debug_MPI|x64
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Debug_MPI|x86.ActiveCfg = Debug_MPI|Win32
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Debug_MPI|x86.Build.0 = Debug_MPI|Win32
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Debug|x64.ActiveCfg = Debug|x64
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Debug|x64.Build.0 = Debug|x64
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Debug|x86.ActiveCfg = Debug|Win32
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Debug|x86.Build.0 = Debug|Win32
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.DLL|x64.ActiveCfg = DLL|x64
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.DLL|x64.Build.0 = DLL|x64
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.DLL|x86.ActiveCfg = DLL|Win32
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.DLL|x86.Build.0 = DLL|Win32
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Release_MPI|x64.ActiveCfg = Release_MPI|x64
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Release_MPI|x64.Build.0 = Release_MPI|x64
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Release_MPI|x86.ActiveCfg = Release_MPI|Win32
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Release_MPI|x86.Build.0 = Release_MPI|Win32
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Release|x64.ActiveCfg = Release|x64
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Release|x64.Build.0 = Release|x64
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Release|x86.ActiveCfg = Release|Win32
+		{41F231CF-31D3-480F-8FC6-E904FDA84A29}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21897CD3-86EB-4FAA-B1A0-86ECE0CB5638}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		on-lattice-core.vcxitems*{41f231cf-31d3-480f-8fc6-e904fda84a29}*SharedItemsImports = 4
+		on-lattice-core.vcxitems*{73efdc2a-246f-424e-92df-509b7c00c7b0}*SharedItemsImports = 9
+	EndGlobalSection
+EndGlobal
