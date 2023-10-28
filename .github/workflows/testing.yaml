@@ -9,7 +9,7 @@ jobs:
       - name: Install dependencies
         run: |
           chmod u+x prereqs.sh
-          ./prereqs.sh
+          sudo ./prereqs.sh
       - name: Run tests
         working-directory: ./src
         run: |
