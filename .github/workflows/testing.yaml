@@ -13,4 +13,4 @@ jobs:
       - name: Run tests
         working-directory: ./src
         run: |
-          python test/test.py
+          python -m unittest ./test/test_digit_predictor.py

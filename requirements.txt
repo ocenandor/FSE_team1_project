@@ -3,4 +3,5 @@ tensorflow
 numpy 
 Pillow
 opencv-python
+unittest2
 Cython
