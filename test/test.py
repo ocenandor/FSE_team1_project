@@ -1,5 +1,6 @@
 from os import listdir
 from os.path import isfile, join
+from .digit_predictor import Model
 
 test_path = '../Desktop/Project/test/img'
 imgs = [f for f in listdir(test_path) if isfile(join(test_path, f))]

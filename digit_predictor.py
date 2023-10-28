@@ -69,3 +69,11 @@ class Model():
         #predicting the digit
         result = self.model.predict([img])[0]
         return np.argmax(result), max(result)
+
+
+
+from os import listdir
+from os.path import isfile, join
+test_model = Model()
+prediction = test_model.predict_digit("0.png")[0]
+print(prediction)
