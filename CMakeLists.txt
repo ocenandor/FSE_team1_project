@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.10)
 project(On-img LANGUAGES CXX C VERSION 0.1)
 
 # Project authors
-set(AUTHOR "Garifullin K., Alekseev A., Beksultanova A., Tikhomirov P., Zinkovich V.")
+set(AUTHOR "Garifullin K., Alekseev A., Bexultanova A., Tikhomirov P., Zinkovich V.")
 set(DESCRIPTION "Soft for recognising numbers from images")
 
 
