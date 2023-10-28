@@ -1,6 +1,4 @@
 from keras.models import load_model
-from tkinter import *
-import tkinter as tk
 import os
 import cv2
 from PIL import ImageGrab, Image
@@ -53,12 +51,8 @@ class Model():
         """function to predict the digit. 
         Argument of function is PIL Image"""
         if type(img_path) == str and os.path.isfile(img_path):
-            if imghdr.what(img_path) is not None:
-                if imghdr.what(img_path).lower() in ['png', 'jpg', 'jpeg']:
-                    preprocessed_image = self.preprocessing_image(img_path)
-                else:
-                    print('File is not an image')
-                    raise ValueError
+            if imghdr.what(img_path).lower() in ['png', 'jpg', 'jpeg']:
+                preprocessed_image = self.preprocessing_image(img_path)
             else:
                 print('File is not an image')
                 raise ValueError
@@ -73,5 +67,11 @@ class Model():
         #predicting the digit
         result = self.model.predict([img])[0]
         return np.argmax(result), max(result)
-    
-print('hhh')
+
+
+
+from os import listdir
+from os.path import isfile, join
+test_model = Model()
+prediction = test_model.predict_digit("0.png")[0]
+print(prediction)
