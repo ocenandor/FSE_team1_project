@@ -28,8 +28,12 @@ class TestModel(unittest.TestCase):
                 self.assertEqual(digit, prediction)
 
     def test_invalid(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ValueError, "Invalid image path did not raise ValueError"):
             invalid_img_path = 'invalid_path.png'
             self.model.predict_digit(invalid_img_path)
+        with self.assertRaises(ValueError, "Non-image file did not raise ValueError"):
+            non_image_path = 'test/for_test.txt'
+            self.model.predict_digit(non_image_path)
+
 
     
