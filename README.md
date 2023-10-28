@@ -1,5 +1,11 @@
-# A calculator that recognizes numbers from photos. 
+## A calculator that recognizes numbers from photos. 
+
+## About
+
 Project from Skoltech FSE course.
+
+This calculator can recognize numbers from photos and then add them.
+
 
 ### Run with the aid of Docker:
 
@@ -45,4 +51,13 @@ docker cp 7.png Kamil:/root/Artem/src/dataset/
 On docker container:
 
 python3 digit_predictor.py
+
+
+## Developers
+
+- [Kamil Garifullin](https://github.com/kzGarifullin)
+- Victoria Zinkovich
+- Pavel Tikhomirov
+- Aikun Bexultanova
+- Artem Alekseev
 
