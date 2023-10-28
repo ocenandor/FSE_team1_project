@@ -5,6 +5,8 @@ from PIL import ImageGrab, Image
 import numpy as np
 import PIL
 import imghdr
+from os import listdir
+from os.path import isfile, join
 
 class Model():
     def __init__(self):
@@ -69,9 +71,8 @@ class Model():
         return np.argmax(result), max(result)
 
 
+if __name__ == '__main__':
 
-from os import listdir
-from os.path import isfile, join
-test_model = Model()
-prediction = test_model.predict_digit("0.png")[0]
-print(prediction)
+    test_model = Model()
+    prediction = test_model.predict_digit("0.png")[0]
+    print(prediction)
