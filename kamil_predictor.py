@@ -1,6 +1,4 @@
 from keras.models import load_model
-from tkinter import *
-import tkinter as tk
 import os
 import cv2
 from PIL import ImageGrab, Image
