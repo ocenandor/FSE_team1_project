@@ -10,7 +10,8 @@ from os.path import isfile, join
 
 class Model():
     def __init__(self):
-        self.model = load_model('src/mnist.h5')
+        cur_dir = os.getcwd()
+        self.model = load_model(f'{cur_dir}/mnist.h5')
         pass
         
     def read_img(self, img_path):
