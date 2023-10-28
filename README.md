@@ -3,7 +3,16 @@ Project from Skoltech FSE course.
 
 Run with the aid of Docker:
 
+First of all clone the repo with project to your local machine:
+
 git clone https://github.com/ocenandor/FSE_team1_project.git
 
+Then build docker image:
+
 docker build -t fse_3 .
+
+Then copy 2 photos of images to "dataset" directory and run container:
+
+docker run -v $PWD/src/dataset:/app/src/dataset fse_3
+
 
