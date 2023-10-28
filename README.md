@@ -36,3 +36,7 @@ chmod u+x test.sh
 
 ./test.sh
 
+cd ../../
+
+python3 digit_predictor.py
+
