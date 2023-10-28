@@ -7,5 +7,5 @@ RUN apt install vim -y
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 COPY . /app
 RUN pip install -r app/requirements.txt --break-system-packages
-WORKDIR /app
-CMD python3 src/digit_predictor.py
+WORKDIR /app/src
+CMD python3 digit_predictor.py

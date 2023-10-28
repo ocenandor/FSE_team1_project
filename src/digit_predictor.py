@@ -8,9 +8,10 @@ import imghdr
 from os import listdir
 from os.path import isfile, join
 
+
 class Model():
     def __init__(self):
-        cur_dir = os.getcwd()
+        cur_dir = os.path.dirname(os.path.realpath(__file__))
         self.model = load_model(f'{cur_dir}/mnist.h5')
         pass
         
@@ -78,7 +79,8 @@ class Model():
 
 if __name__ == '__main__':
     test_model = Model()
-    mypath = 'src/dataset/'
+    cur_dir = os.path.dirname(os.path.realpath(__file__))
+    mypath = f'{cur_dir}/dataset'
     onlyfiles = [f for f in listdir(mypath) if (isfile(join(mypath, f)) and imghdr.what(join(mypath, f)) != None)]
     onlyfiles = [f for f in onlyfiles if imghdr.what(join(mypath, f)).lower() in ['png', 'jpg', 'jpeg']]
 
