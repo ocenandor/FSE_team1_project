@@ -8,6 +8,7 @@ RUN apt install python3 python3-pip -y
 RUN apt install vim -y
 RUN apt install cmake -y
 RUN apt install clang g++ -y
+RUN apt install dos2unix -y
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 COPY . /app
@@ -20,6 +21,8 @@ RUN cmake ..
 RUN make
 
 WORKDIR /app/python
+RUN dos2unix all-compile.sh
+RUN dos2unix compile.sh
 RUN ./all-compile.sh
 
 WORKDIR /app/src
