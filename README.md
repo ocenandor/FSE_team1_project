@@ -1,5 +1,11 @@
 # CALCULATOR THAT RECOGNIZES NUMBERS FROM PHOTOS 
 
+## About
+Project from Skoltech FSE course.
+
+This calculator can recognize numbers from photos and then add them.
+
+
 ## Run with the aid of Docker:
 - First, clone the repository with project to your local machine:
    ```bash
@@ -40,3 +46,12 @@
    ```bash
    python3 digit_predictor.py
    ```
+
+
+
+## Developers
+- [Kamil Garifullin](https://github.com/kzGarifullin)
+- Victoria Zinkovich
+- Pavel Tikhomirov
+- Aikun Bexultanova
+- Artem Alekseev
