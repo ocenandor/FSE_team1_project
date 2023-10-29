@@ -6,65 +6,45 @@ Project from Skoltech FSE course.
 This calculator can recognize numbers from photos and then add them.
 
 
-## Run with the aid of Docker:
+## Get started. Building a docker image from the provided Dockerfile:
 - First, clone the repository with project to your local machine:
    ```bash
-   git clone https://github.com/ocenandor/FSE_team1_project.git
+   git clone https://github.com/ocenandor/FSE_team1_project.git -b master
    ```
 - Second, build docker image:
    ```bash
-   docker build -t fse_3 .
+   docker build -t fse_project .
    ```
 - Then, copy 2 photos of images to "dataset" directory and run container:
    ```bash
-   docker run -v $PWD/src/dataset:/app/src/dataset fse_3
+   docker run -v $PWD/src/dataset:/app/src/dataset fse_project
    ```
-
-## Or you can do it by yourself:
-
-- Make following commands 
-   ```bash
-   apt update
-   apt install git
-   git clone https://github.com/ocenandor/FSE_team1_project.git project
-   cd project
-   chmod u+x prereqs.sh
-   ./prereqs.sh
-   chmod u+x build.sh
-   ./build.sh
-   cd src/test
-   chmod u+x test.sh
-   ./test.sh
-   cd ../../
-   ```
-   On local computer:
-   ```bash
-   docker cp 7.png Kamil:/root/Artem/src/dataset/
-   ```
-
-   On docker container:
-   ```bash
-   python3 digit_predictor.py
-   ```
-
-To use docker clone repository and run the following shell scripts:
-
-git clone https://github.com/Pils48/fse-final-project.git to clone repository
-./install_docker.sh in case you don't have docker installed
-./build_docker.sh
-./run_docker.sh
-
 
 ## Docker Container Installation
-- To use docker clone repository:
+- Create an empty ubuntu:23.04 docker container:
    ```bash
-   git clone https://github.com/ocenandor/FSE_team1_project.git
+   docker pull ubuntu:23.04
+   docker run -ti --name fse_project ubuntu:23.04
+   git clone https://github.com/ocenandor/FSE_team1_project.git -b master
    ```
+- Clone repository with project:
+   ```bash
+   git clone https://github.com/ocenandor/FSE_team1_project.git -b master
+   ```   
 - Run the following shell scripts:
    ```bash
-   ./install_docker.sh in case you don't have docker installed
+   ./build.sh 
    ./prereqs.sh
-   ./build.sh
+   ./test.sh
+   ```
+- To use the code, you need to copy 2 photos of numbers from your local computer to a docker container:
+   ```bash
+   docker cp 7.png Kamil:/root/Artem/src/dataset/
+   docker cp 2.png Kamil:/root/Artem/src/dataset/
+   ```
+- Then run python script ni the docker container:
+   ```bash
+   python3 digit_predictor.py
    ```
 
 
