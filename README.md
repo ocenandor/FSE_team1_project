@@ -25,11 +25,13 @@ This calculator can recognize numbers from photos and then add them.
    ```bash
    docker pull ubuntu:23.04
    docker run -ti --name fse_project ubuntu:23.04
-   git clone https://github.com/ocenandor/FSE_team1_project.git -b master
+   apt-get update
+   apt-get install git
    ```
 - Clone repository with project:
    ```bash
    git clone https://github.com/ocenandor/FSE_team1_project.git -b master
+   cd FSE_team1_project
    ```   
 - Run the following shell scripts:
    ```bash
