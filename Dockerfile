@@ -26,4 +26,5 @@ RUN dos2unix compile.sh
 RUN ./all-compile.sh
 
 WORKDIR /app/src
+RUN mkdir dataset
 CMD python3 digit_predictor.py
