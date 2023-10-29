@@ -1,4 +1,4 @@
-name: unittest-checking
+name: building-checking
 run-name: ${{ github.actor }} is building software
 on: [push]
 jobs:
