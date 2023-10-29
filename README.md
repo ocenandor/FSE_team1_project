@@ -49,13 +49,14 @@ This calculator can recognize numbers from photos and then add them.
    chmod u+x ./test.sh
    ./test.sh   
    ```
-- To use the code, you need to copy 2 photos of numbers from your local computer to a docker container:
+- To use the code, you need to copy 2 photos of numbers from your local computer to a docker container (you should create src/dataset directory):
    ```bash
    docker cp 7.png fse_project:/root/project/src/dataset/
    docker cp 2.png fse_project:/root/project/src/dataset/
    ```
 - Then run python script in the docker container:
    ```bash
+   cd src
    python3 digit_predictor.py
    ```
 
