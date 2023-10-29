@@ -10,6 +10,7 @@ This calculator can recognize numbers from photos and then add them.
 - First, clone the repository with project to your local machine:
    ```bash
    git clone https://github.com/ocenandor/FSE_team1_project.git -b master
+   cd FSE_team1_project
    ```
 - Second, build docker image:
    ```bash
