@@ -33,9 +33,9 @@ This calculator can recognize numbers from photos and then add them.
    ```   
 - Run the following shell scripts:
    ```bash
-   ./build.sh 
-   ./prereqs.sh
-   ./test.sh
+   chmod u+x ./build.sh && ./build.sh
+   chmod u+x ./prereqs.sh && ./prereqs.sh
+   chmod u+x ./test.sh && ./test.sh   
    ```
 - To use the code, you need to copy 2 photos of numbers from your local computer to a docker container:
    ```bash
