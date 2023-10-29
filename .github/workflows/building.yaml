@@ -7,10 +7,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Create a virtual environment
-        run: python -m venv ./venv
+        run: python -m venv ../venv
       - name: Activate the virtual environment
         run: |
-          source ./venv/bin/activate
+          source ../venv/bin/activate
           pwd
           ls
       - name: Install prereqs
