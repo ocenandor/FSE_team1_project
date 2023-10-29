@@ -23,7 +23,7 @@ This calculator can recognize numbers from photos and then add them.
    ```
   **Windows**
   ```bash
-   docker run -v %cmd%/src/dataset:/app/src/dataset fse_project
+   docker run -v %cd%/src/dataset:/app/src/dataset fse_project
    ```
 
 ## Development
