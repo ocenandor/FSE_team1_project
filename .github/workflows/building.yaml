@@ -7,10 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Create a virtual environment
-        run: python -m venv myenv
+        run: python -m venv venv
       - name: Activate the virtual environment
-        run: source myenv/bin/activate
-        working-directory: ${{ github.workspace }}
+        run: source venv/bin/activate
       - name: Install prereqs
         run: |
           chmod u+x ./prereqs.sh
