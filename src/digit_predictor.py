@@ -8,9 +8,6 @@ import imghdr
 from os import listdir
 from os.path import isfile, join
 
-from img_calculator import Calculator
-
-
 class Model():
     def __init__(self):
         cur_dir = os.path.dirname(os.path.realpath(__file__))
@@ -80,6 +77,8 @@ class Model():
 
 
 if __name__ == '__main__':
+    from img_calculator import Calculator
+
     test_model = Model()
     cur_dir = os.path.dirname(os.path.realpath(__file__))
     mypath = f'{cur_dir}/dataset'
