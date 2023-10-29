@@ -8,6 +8,8 @@ import imghdr
 from os import listdir
 from os.path import isfile, join
 
+from img_calculator import Calculator
+
 
 class Model():
     def __init__(self):
@@ -85,10 +87,12 @@ if __name__ == '__main__':
     onlyfiles = [f for f in onlyfiles if imghdr.what(join(mypath, f)).lower() in ['png', 'jpg', 'jpeg']]
 
     if len(onlyfiles) >= 2:
-        num1 = test_model.predict_digit(join(mypath, onlyfiles[0]))
-        num2 = test_model.predict_digit(join(mypath, onlyfiles[1]))
-        print('Done!')
-        print(num1, num2)
+        num1 = int(test_model.predict_digit(join(mypath, onlyfiles[0]))[0])
+        num2 = int(test_model.predict_digit(join(mypath, onlyfiles[1]))[0])
+
+        p = Calculator()
+
+        print(p.sum(num1, num2))
     else:
         print('Not enough images. At least 2')
         raise ValueError
