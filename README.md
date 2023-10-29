@@ -6,7 +6,7 @@ Project from Skoltech FSE course.
 This calculator can recognize numbers from photos and then add them.
 
 
-## Get started. Building a docker image from the provided Dockerfile:
+## Get started. Building a docker image from the provided Dockerfile
 - First, clone the repository with project to your local machine:
    ```bash
    git clone https://github.com/ocenandor/FSE_team1_project.git -b master
@@ -42,7 +42,7 @@ This calculator can recognize numbers from photos and then add them.
    docker cp 7.png Kamil:/root/Artem/src/dataset/
    docker cp 2.png Kamil:/root/Artem/src/dataset/
    ```
-- Then run python script ni the docker container:
+- Then run python script in the docker container:
    ```bash
    python3 digit_predictor.py
    ```
