@@ -9,7 +9,9 @@ jobs:
       - name: Create a virtual environment
         run: python -m venv venv
       - name: Activate the virtual environment
-        run: source venv/bin/activate
+        run: |
+          source venv/bin/activate
+          pwd
       - name: Install prereqs
         run: |
           chmod u+x ./prereqs.sh
