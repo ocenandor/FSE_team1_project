@@ -20,7 +20,7 @@ This calculator can recognize numbers from photos and then add them.
    docker run -v $PWD/src/dataset:/app/src/dataset fse_project
    ```
 
-## Development. 
+## Development
 - Create an empty ubuntu:23.04 docker container:
    ```bash
    docker pull ubuntu:23.04
