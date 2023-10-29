@@ -47,11 +47,32 @@ This calculator can recognize numbers from photos and then add them.
    python3 digit_predictor.py
    ```
 
+To use docker clone repository and run the following shell scripts:
+
+git clone https://github.com/Pils48/fse-final-project.git to clone repository
+./install_docker.sh in case you don't have docker installed
+./build_docker.sh
+./run_docker.sh
+
+
+## Docker Container Installation
+- To use docker clone repository:
+   ```bash
+   git clone https://github.com/ocenandor/FSE_team1_project.git
+   ```
+- Run the following shell scripts:
+   ```bash
+   ./install_docker.sh in case you don't have docker installed
+   ./prereqs.sh
+   ./build.sh
+   ```
+
 
 
 ## Developers
 - [Kamil Garifullin](https://github.com/kzGarifullin)
-- Victoria Zinkovich
-- Pavel Tikhomirov
-- Aikun Bexultanova
-- Artem Alekseev
+- [Victoria Zinkovich](https://github.com/victoriazinkovich)
+- [Artem Alekseev](https://github.com/a007mg)
+- [Pavel Tikhomirov](https://github.com/ocenandor)
+- [Aikun Bexultanova](https://github.com/fokrey)
+
