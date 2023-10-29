@@ -15,7 +15,7 @@ This calculator can recognize numbers from photos and then add them.
    ```bash
    docker build -t fse_project .
    ```
-- Then, copy 2 photos of images to "dataset" directory and run container:
+- Then, make directiry "dataset" in project/src/ in your local computer and copy 2 photos of images to "dataset" directory and run container:
    ```bash
    docker run -v $PWD/src/dataset:/app/src/dataset fse_project
    ```
